@@ -1,0 +1,27 @@
+def minion_game(string):
+    # your code goes here
+    a=0
+    b=0
+    c={"A","I","E","O","U"}
+    for i in range(0,len(string)):
+        
+            if(string[i] in c):
+              for j in range (i+1,len(string)+1):
+                a+=1
+            else:
+              for j in range (i+1,len(string)+1):
+                b+=1
+           
+    
+    
+
+    if(a>b):
+        print("Kevin",a)
+    elif(a==b):
+        print("Draw")    
+    else:
+        print("Stuart",b)
+
+if __name__ == '__main__':
+    s = input()
+    minion_game(s)
